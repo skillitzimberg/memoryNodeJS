@@ -17,33 +17,39 @@ If the user's selected cards are different they should return to face down.
 When all the cards are face up, the user has won.  
 The object of the game is to find all the pairs in as few turns as possible.  
 
-##### Spec 1: Create a card:
-- [ ] **Expect:**  
+##### Spec 1: Card constructor:
+- [ ] **Expect:** Create a card  
+Properties: face, back;  
 Input - card face name/picture: monkey;  
-Output: monkey;
+Output: card: monkey; back;
 
-##### Spec 2: Toggle between card face down and card face up:
-- [ ] **Expect:**  
+##### Spec 2: Board constructor:
+- [ ] **Expect:** Create a card  
+Properties: rows, columns;  
 Input - card face name/picture: monkey;  
+Output: card: monkey; back;
+
+##### Spec 3: toggleCard():
+- [ ] **Expect:** Toggle between card face down and card face up  
 Action - click on monkey picture;  
 Result: card back is shown;
 
-##### Spec 3: Create a card pair:
-- [ ] **Expect:**  
-Input - card face name/picture: monkey;  
-Output: two monkey cards;
+##### Spec 4: cardPair():
+- [ ] **Expect:**  Create a card pair  
+Input - fig card;  
+Output: two fig cards;
 
-##### Spec 4: Create a card grid:
-- [ ] **Expect:**  
-Input - array of cards: monkey, banana, football, fig, tire;  
-Output - randomized order: monkey, monkey, banana, banana, football, football, fig, fig, tire, tire;
-
-##### Spec 5: Set all cards to face down:
-- [ ] **Expect:**  
+##### Spec 5: setInitialState():
+- [ ] **Expect:** Set all cards to face down  
 Input - set of cards: monkey, banana, football, fig, tire;  
 Output - randomized order & faces down: monkey, monkey, banana, banana, football, football, fig, fig, tire, tire;
 
-##### Spec 6: Set all cards to face down:
+##### Spec 6: dealCards():
+- [ ] **Expect:** Lay out cards on the board  
+Input - array of cards: monkey, banana, football, fig, tire;  
+Output - randomized order: monkey, monkey, banana, banana, football, football, fig, fig, tire, tire;
+
+##### Spec 7: Set all cards to face down:
 - [ ] **Expect:**  
 Input - set of cards: monkey, banana, football, fig, tire;  
 Output - randomized order & faces down: monkey, monkey, banana, banana, football, football, fig, fig, tire, tire;
